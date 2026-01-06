@@ -11,6 +11,7 @@
 </head>
 <style>/* GLOBAL RESET */
 /* RESET */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +24,7 @@ body {
   background: #f4f6f8;
   color: #222;
   line-height: 1.6;
-  padding-top: 160px; /* increased space for fixed header */
+  padding-top: 160px;
 }
 
 /* FIXED TRANSLUCENT HEADER */
@@ -47,7 +48,7 @@ body {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* logo on left */
+  justify-content: flex-start;
   gap: 20px;
 }
 
@@ -185,9 +186,17 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
+/* TABLE WRAPPER (OVERFLOW ENABLED) */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* TABLES */
 table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 0.95em;
@@ -202,6 +211,7 @@ th, td {
 th {
   background: #0a2a66;
   color: white;
+  font-weight: bold;
 }
 
 /* PRICE LIST */
@@ -257,10 +267,6 @@ footer {
 @media(max-width: 600px) {
   body {
     padding-top: 180px;
-  }
-
-  .hero-container {
-    flex-direction: row;
   }
 
   .logo {
@@ -541,6 +547,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
