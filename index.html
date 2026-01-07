@@ -209,6 +209,160 @@ footer {
   background: #0a2a66;
   right: 90px;
 }
+/* =================================================
+   HERO HEADER (FIXED / RESPONSIVE / MOBILE SAFE)
+================================================= */
+
+/* HERO BACKGROUND */
+.hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(10, 42, 102, 0.95),
+    rgba(10, 42, 102, 0.85)
+  );
+  color: #ffffff;
+  padding: 20px 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+/* HERO CONTAINER */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* LOGO */
+.logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 6px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  flex-shrink: 0;
+}
+
+/* HERO TEXT WRAPPER */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TITLE */
+.hero-text h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+/* TAGLINE */
+.hero-text p {
+  font-size: 1.1rem;
+  opacity: 0.92;
+  margin-bottom: 14px;
+  max-width: 600px;
+}
+
+/* BUTTON GROUP */
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+}
+
+.primary {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/* =================================================
+   RESPONSIVE BREAKPOINTS
+================================================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero {
+    padding: 22px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 6px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 1.55rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
 
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
@@ -487,6 +641,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
