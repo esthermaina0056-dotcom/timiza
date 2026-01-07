@@ -101,6 +101,51 @@ margin-right: 10px;
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+/* ================= PRICE LIST (NO TABLES) ================= */
+
+.price-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.price-item {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.price-item h3 {
+  font-size: 1.05rem;
+  color: #0a2a66;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed #ddd;
+}
+
+.price-row:last-child {
+  border-bottom: none;
+}
+
+.price-row span {
+  font-weight: 600;
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .price-row {
+    font-size: 0.9rem;
+  }
+}
 
 .primary {
 background: #25D366;
@@ -398,106 +443,168 @@ Poker Vibrators
 
 <!-- WALKING TRACTORS PRICES -->
 <section class="section light">
-<h2>Walking Tractors Prices</h2>
-<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-<table>
-<tr>
-<th>HP</th>
-<th>Cash Price</th>
-<th>Deposit</th>
-<th>Monthly</th>
-<th>Duration</th>
-</tr>
-<tr><td>10 HP</td><td>120,000</td><td>24,000</td><td>6,050</td><td>20 Months</td></tr>
-<tr><td>12 HP</td><td>165,000</td><td>33,000</td><td>7,560</td><td>22 Months</td></tr>
-<tr><td>14 HP</td><td>190,000</td><td>38,000</td><td>7,980</td><td>24 Months</td></tr>
-<tr><td>16 HP</td><td>250,000</td><td>50,000</td><td>10,500</td><td>24 Months</td></tr>
-<tr><td>18 HP</td><td>280,000</td><td>56,000</td><td>10,855</td><td>26 Months</td></tr>
-<tr><td>22 HP</td><td>360,000</td><td>72,000</td><td>13,440</td><td>27 Months</td></tr>
-<tr><td>24 HP</td><td>420,000</td><td>84,000</td><td>15,680</td><td>27 Months</td></tr>
-</table>
-</section>
+  <h2>Walking Tractors Prices</h2>
 
-<!-- PRICE LISTS -->
-<section class="section light">
-<h2>Feed Chopper Options & Prices</h2>
+  <div class="price-list-grid">
 
-<table>
-<tr>
-<th>Model</th>
-<th>Power</th>
-<th>Cash (KSh)</th>
-<th>Deposit (KSh)</th>
-<th>Monthly</th>
-<th>Duration</th>
-</tr>
-<tr><td>Petrol Feed Chopper</td><td>7.5 HP</td><td>28,000</td><td>5,600</td><td>2,350</td><td>12 Months</td></tr>
-<tr><td>Electric Feed Chopper</td><td>3 HP</td><td>35,000</td><td>6,500</td><td>2,940</td><td>12 Months</td></tr>
-<tr><td>Electric Feed Chopper</td><td>5 HP</td><td>38,000</td><td>7,600</td><td>3,200</td><td>12 Months</td></tr>
-<tr><td>Imported Petrol Feed Chopper</td><td>7.5 HP</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
-<tr><td>Imported Electric Feed Chopper</td><td>3 HP</td><td>41,000</td><td>8,200</td><td>3,440</td><td>12 Months</td></tr>
-<tr><td>Imported Electric Feed Chopper</td><td>5 HP</td><td>45,000</td><td>9,000</td><td>3,570</td><td>15 Months</td></tr>
-<tr><td>Imported Diesel Feed Chopper</td><td>7.5 HP</td><td>50,000</td><td>10,000</td><td>3,360</td><td>15 Months</td></tr>
-<tr><td>Diesel Feed Chopper</td><td>10 HP</td><td>60,000</td><td>12,000</td><td>3,360</td><td>18 Months</td></tr>
-<tr><td>Heavy Duty Feed Chopper</td><td>18 HP Diesel</td><td>160,000</td><td>32,000</td><td>8,060</td><td>20 Months</td></tr>
-<tr><td>Commercial Feed Chopper</td><td>20 HP Diesel</td><td>180,000</td><td>36,000</td><td>9,070</td><td>20 Months</td></tr>
-<tr><td>Commercial Feed Chopper</td><td>22 HP Diesel</td><td>198,000</td><td>39,600</td><td>9,730</td><td>20 Months</td></tr>
-<tr><td>Commercial Feed Chopper</td><td>24 HP Diesel</td><td>210,000</td><td>42,000</td><td>9,620</td><td>20 Months</td></tr>
-</table>
+    <div class="price-item">
+      <h3>10 HP</h3>
+      <div class="price-row"><span>Cash:</span> 120,000</div>
+      <div class="price-row"><span>Deposit:</span> 24,000</div>
+      <div class="price-row"><span>Monthly:</span> 6,050</div>
+      <div class="price-row"><span>Duration:</span> 20 Months</div>
+    </div>
+
+    <div class="price-item">
+      <h3>12 HP</h3>
+      <div class="price-row"><span>Cash:</span> 165,000</div>
+      <div class="price-row"><span>Deposit:</span> 33,000</div>
+      <div class="price-row"><span>Monthly:</span> 7,560</div>
+      <div class="price-row"><span>Duration:</span> 22 Months</div>
+    </div>
+
+    <div class="price-item">
+      <h3>14 HP</h3>
+      <div class="price-row"><span>Cash:</span> 190,000</div>
+      <div class="price-row"><span>Deposit:</span> 38,000</div>
+      <div class="price-row"><span>Monthly:</span> 7,980</div>
+      <div class="price-row"><span>Duration:</span> 24 Months</div>
+    </div>
+
+    <div class="price-item">
+      <h3>16 HP</h3>
+      <div class="price-row"><span>Cash:</span> 250,000</div>
+      <div class="price-row"><span>Deposit:</span> 50,000</div>
+      <div class="price-row"><span>Monthly:</span> 10,500</div>
+      <div class="price-row"><span>Duration:</span> 24 Months</div>
+    </div>
+
+    <div class="price-item">
+      <h3>18 HP</h3>
+      <div class="price-row"><span>Cash:</span> 280,000</div>
+      <div class="price-row"><span>Deposit:</span> 56,000</div>
+      <div class="price-row"><span>Monthly:</span> 10,855</div>
+      <div class="price-row"><span>Duration:</span> 26 Months</div>
+    </div>
+
+    <div class="price-item">
+      <h3>22 HP</h3>
+      <div class="price-row"><span>Cash:</span> 360,000</div>
+      <div class="price-row"><span>Deposit:</span> 72,000</div>
+      <div class="price-row"><span>Monthly:</span> 13,440</div>
+      <div class="price-row"><span>Duration:</span> 27 Months</div>
+    </div>
+
+    <div class="price-item">
+      <h3>24 HP</h3>
+      <div class="price-row"><span>Cash:</span> 420,000</div>
+      <div class="price-row"><span>Deposit:</span> 84,000</div>
+      <div class="price-row"><span>Monthly:</span> 15,680</div>
+      <div class="price-row"><span>Duration:</span> 27 Months</div>
+    </div>
+
+  </div>
 </section>
 
 <section class="section light">
 <h2>Chaff Cutter Price List</h2>
 
-<table>
-<tr>
-<th>Model</th>
-<th>Specification</th>
-<th>Cash (KSh)</th>
-<th>Deposit (KSh)</th>
-<th>Monthly</th>
-<th>Duration</th>
-</tr>
-<tr><td>Manual Chaff Cutter</td><td>Manual</td><td>17,000</td><td>3,400</td><td>1,430</td><td>12 Months</td></tr>
-<tr><td>Petrol Chaff Cutter</td><td>5 HP – 2 Blades</td><td>28,000</td><td>5,600</td><td>2,350</td><td>12 Months</td></tr>
-<tr><td>Petrol Chaff Cutter</td><td>7.5 HP – 3 Blades</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
-<tr><td>Electric Chaff Cutter</td><td>2 HP – 2 Blades</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
-<tr><td>Electric Chaff Cutter</td><td>2 HP – 3 Blades, 2 Rollers</td><td>41,000</td><td>8,200</td><td>3,440</td><td>12 Months</td></tr>
-<tr><td>Electric Chaff Cutter</td><td>3 HP – 3 Blades, 3 Rollers</td><td>45,000</td><td>9,000</td><td>3,570</td><td>12 Months</td></tr>
-<tr><td>Heavy Duty Chaff Cutter</td><td>5 HP – 4 Blades</td><td>55,000</td><td>11,000</td><td>3,700</td><td>15 Months</td></tr>
-</table>
+<div class="price-list-grid">
+
+  <div class="price-item">
+    <h3>Manual Chaff Cutter</h3>
+    <div class="price-row"><span>Spec:</span> Manual</div>
+    <div class="price-row"><span>Cash:</span> 17,000</div>
+    <div class="price-row"><span>Deposit:</span> 3,400</div>
+    <div class="price-row"><span>Monthly:</span> 1,430</div>
+    <div class="price-row"><span>Duration:</span> 12 Months</div>
+  </div>
+
+  <div class="price-item">
+    <h3>Petrol Chaff Cutter</h3>
+    <div class="price-row"><span>Spec:</span> 7.5 HP – 3 Blades</div>
+    <div class="price-row"><span>Cash:</span> 35,000</div>
+    <div class="price-row"><span>Deposit:</span> 7,000</div>
+    <div class="price-row"><span>Monthly:</span> 2,940</div>
+    <div class="price-row"><span>Duration:</span> 12 Months</div>
+  </div>
+
+  <div class="price-item">
+    <h3>Heavy Duty Chaff Cutter</h3>
+    <div class="price-row"><span>Spec:</span> 5 HP – 4 Blades</div>
+    <div class="price-row"><span>Cash:</span> 55,000</div>
+    <div class="price-row"><span>Deposit:</span> 11,000</div>
+    <div class="price-row"><span>Monthly:</span> 3,700</div>
+    <div class="price-row"><span>Duration:</span> 15 Months</div>
+  </div>
+
+</div>
 </section>
 
+
+<section class="section light">
+<h2>Feed Chopper Options & Prices</h2>
+
+<div class="price-list-grid">
+
+  <div class="price-item">
+    <h3>Petrol Feed Chopper</h3>
+    <div class="price-row"><span>Power:</span> 7.5 HP</div>
+    <div class="price-row"><span>Cash:</span> 28,000</div>
+    <div class="price-row"><span>Deposit:</span> 5,600</div>
+    <div class="price-row"><span>Monthly:</span> 2,350</div>
+    <div class="price-row"><span>Duration:</span> 12 Months</div>
+  </div>
+
+  <div class="price-item">
+    <h3>Electric Feed Chopper</h3>
+    <div class="price-row"><span>Power:</span> 3 HP</div>
+    <div class="price-row"><span>Cash:</span> 35,000</div>
+    <div class="price-row"><span>Deposit:</span> 6,500</div>
+    <div class="price-row"><span>Monthly:</span> 2,940</div>
+    <div class="price-row"><span>Duration:</span> 12 Months</div>
+  </div>
+
+  <div class="price-item">
+    <h3>Heavy Duty Feed Chopper</h3>
+    <div class="price-row"><span>Power:</span> 18 HP Diesel</div>
+    <div class="price-row"><span>Cash:</span> 160,000</div>
+    <div class="price-row"><span>Deposit:</span> 32,000</div>
+    <div class="price-row"><span>Monthly:</span> 8,060</div>
+    <div class="price-row"><span>Duration:</span> 20 Months</div>
+  </div>
+
+</div>
+</section>
+
+  
 <section class="section light">
 <h2>Generators Price List</h2>
 
-<table>
-<tr>
-<th>Brand</th>
-<th>Capacity</th>
-<th>Type</th>
-<th>Price (KSh)</th>
-</tr>
-<tr><td>Hisaki</td><td>3.0 KVA</td><td>Petrol</td><td>38,000</td></tr>
-<tr><td>Hisaki</td><td>4.0 KVA</td><td>Petrol</td><td>42,000</td></tr>
-<tr><td>Hisaki</td><td>5.5 KVA</td><td>Petrol</td><td>45,000</td></tr>
-<tr><td>Hisaki</td><td>6.5 KVA</td><td>Petrol</td><td>78,000</td></tr>
-<tr><td>Hisaki</td><td>8.0 KVA</td><td>Petrol</td><td>82,000</td></tr>
-<tr><td>Hisaki</td><td>9.0 KVA</td><td>Petrol</td><td>90,000</td></tr>
-<tr><td>Hisaki</td><td>9.0 KVA</td><td>3 Phase</td><td>95,000</td></tr>
-<tr><td>AICO</td><td>2 KVA</td><td>Rope Start</td><td>30,000</td></tr>
-<tr><td>AICO</td><td>2 KVA</td><td>Key Start</td><td>35,000</td></tr>
-<tr><td>AICO</td><td>3 KVA</td><td>Rope Start</td><td>33,000</td></tr>
-<tr><td>AICO</td><td>3 KVA</td><td>Key Start</td><td>37,000</td></tr>
-<tr><td>AICO</td><td>4 KVA</td><td>Key Start</td><td>42,000</td></tr>
-<tr><td>AICO</td><td>6 KVA</td><td>Key Start</td><td>62,000</td></tr>
-<tr><td>AICO</td><td>7 KVA</td><td>Key Start</td><td>78,000</td></tr>
-<tr><td>Rhino</td><td>7.5 KVA</td><td>Silent Diesel + ATS</td><td>148,000</td></tr>
-<tr><td>Rhino</td><td>9.0 KVA</td><td>Silent Diesel + ATS</td><td>158,000</td></tr>
-<tr><td>Rhino</td><td>13.5 KVA</td><td>Silent Diesel + ATS</td><td>365,000</td></tr>
-<tr><td>American Standard</td><td>9.0 KVA</td><td>Silent Diesel + ATS</td><td>170,000</td></tr>
-</table>
+<div class="price-list-grid">
+
+  <div class="price-item">
+    <h3>Hisaki – 5.5 KVA</h3>
+    <div class="price-row"><span>Type:</span> Petrol</div>
+    <div class="price-row"><span>Price:</span> 45,000</div>
+  </div>
+
+  <div class="price-item">
+    <h3>AICO – 3 KVA</h3>
+    <div class="price-row"><span>Start:</span> Key Start</div>
+    <div class="price-row"><span>Price:</span> 37,000</div>
+  </div>
+
+  <div class="price-item">
+    <h3>Rhino – 7.5 KVA</h3>
+    <div class="price-row"><span>Type:</span> Silent Diesel + ATS</div>
+    <div class="price-row"><span>Price:</span> 148,000</div>
+  </div>
+
+</div>
 </section>
+
+
 
 <!-- MINI TRACTOR -->
 <section class="section">
@@ -536,6 +643,7 @@ Duration: <strong>30 Months</strong>
 
 </body>
 </html>
+
 
 
 
