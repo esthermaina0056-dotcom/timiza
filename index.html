@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Timiza Machinery Company Ltd</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Affordable & Reliable Farm Machinery in Kenya">
-  <link rel="stylesheet" href="style.css">
-  <!-- Add this in the <head> -->
+<meta charset="UTF-8">
+<title>Timiza Machinery Company Ltd</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Affordable & Reliable Farm Machinery in Kenya">
+<link rel="stylesheet" href="style.css">
+<!-- Add this in the <head> -->
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <style>/* GLOBAL RESET */
 /* ================= RESET ================= */
+* {
 /* ================= RESET ================= */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
+/* ================= BODY ================= */
 /* ================= HTML / BODY ================= */
 html {
   width: 100%;
@@ -27,622 +29,513 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f4f6f8;
-  color: #222;
-  line-height: 1.6;
-  padding-top: 160px;
+font-family: 'Segoe UI', Arial, sans-serif;
+background: #f4f6f8;
+color: #222;
+line-height: 1.6;
+padding-top: 160px;
+  max-width: 100vw;
+  overflow-x: hidden;
   width: 100%;
   max-width: 100%;
 }
 
+/* ================= HEADER ================= */
 /* ================= FIXED HEADER ================= */
 .hero {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(10, 42, 102, 0.85);
-  color: white;
-  padding: 20px 0;
-  z-index: 1000;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background: rgba(10, 42, 102, 0.85);
+color: white;
+padding: 20px 0;
+z-index: 1000;
+backdrop-filter: blur(8px);
+box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .hero-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+max-width: 1200px;
+margin: auto;
+padding: 0 20px;
+display: flex;
+align-items: center;
+gap: 20px;
 }
 
 /* ================= LOGO ================= */
 .logo {
-  width: 70px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+width: 70px;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 /* ================= HERO TEXT ================= */
 .hero-text h1 {
-  font-size: 2.2em;
+font-size: 2.2em;
+  margin-bottom: 5px;
 }
 
 .hero-text p {
-  font-size: 1.1em;
+font-size: 1.1em;
 }
 
 /* ================= BUTTONS ================= */
 .btn {
-  padding: 12px 22px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.primary {
-  background: #25D366;
-  color: white;
-}
-
-.outline {
-  border: 2px solid white;
-  color: white;
-}
-
-/* ================= SECTIONS ================= */
-.section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.light {
-  background: white;
-  border-radius: 12px;
-  padding: 40px 20px;
-  margin-bottom: 40px;
-}
-
-/* ================= FEATURES ================= */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.feature {
-  background: #eaf1ff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-}
-
-/* ================= CARDS ================= */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 15px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-/* ================= TABLE SCROLL (CRITICAL) ================= */
-.table-wrapper {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
-}
-
-table {
-  width: 100%;
-  min-width: 900px; /* FORCE horizontal scroll */
-  border-collapse: collapse;
-  margin-top: 20px;
-  table-layout: auto;
-}
-
-th, td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: center;
-  white-space: nowrap; /* PREVENT WRAPPING */
-}
-
-th {
-  background: #0a2a66;
-  color: white;
-}
-
-/* ================= FOOTER ================= */
-footer {
-  background: #0a2a66;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-  border-radius: 20px 20px 0 0;
-}
-
-/* ================= FLOATING BUTTONS ================= */
-.contact-float {
-  position: fixed;
-  bottom: 20px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  color: white;
-  font-size: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.whatsapp {
-  background: #25D366;
-  right: 20px;
-}
-
-.call {
-  background: #0a2a66;
-  right: 90px;
-}
-/* =================================================
-   HERO HEADER (FIXED / RESPONSIVE / MOBILE SAFE)
-================================================= */
-
-/* HERO BACKGROUND */
-.hero {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(10, 42, 102, 0.95),
-    rgba(10, 42, 102, 0.85)
-  );
-  color: #ffffff;
-  padding: 20px 0;
-  z-index: 1000;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.25);
-}
-
-/* HERO CONTAINER */
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-/* LOGO */
-.logo {
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
-  border-radius: 14px;
-  background: #ffffff;
-  padding: 6px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-  flex-shrink: 0;
-}
-
-/* HERO TEXT WRAPPER */
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* TITLE */
-.hero-text h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  margin-bottom: 4px;
-  line-height: 1.2;
-}
-
-/* TAGLINE */
-.hero-text p {
-  font-size: 1.1rem;
-  opacity: 0.92;
-  margin-bottom: 14px;
-  max-width: 600px;
-}
-
-/* BUTTON GROUP */
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-/* BUTTONS */
-.btn {
-  padding: 12px 24px;
-  border-radius: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+padding: 12px 22px;
+border-radius: 8px;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+margin-right: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 .primary {
-  background: #25D366;
-  color: #ffffff;
+background: #25D366;
+color: white;
 }
 
 .outline {
-  border: 2px solid #ffffff;
-  color: #ffffff;
+border: 2px solid white;
+color: white;
 }
 
-/* =================================================
-   RESPONSIVE BREAKPOINTS
-================================================= */
-
-/* TABLET */
-@media (max-width: 900px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
+/* ================= SECTIONS ================= */
+.section {
+max-width: 1100px;
+margin: auto;
+padding: 60px 20px;
 }
 
-/* MOBILE */
-@media (max-width: 600px) {
-  .hero {
-    padding: 22px 0;
-  }
-
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 6px;
-  }
-
-  .hero-text h1 {
-    font-size: 1.75rem;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
+.light {
+background: white;
+border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+padding: 40px 20px;
+margin-bottom: 40px;
 }
 
-/* SMALL PHONES */
-@media (max-width: 400px) {
-  .hero-text h1 {
-    font-size: 1.55rem;
-  }
-
-  .btn {
-    width: 100%;
-  }
+/* ================= FEATURES ================= */
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
 }
 
+.feature {
+background: #eaf1ff;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ================= CARDS ================= */
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.card {
+background: white;
+padding: 15px;
+border-radius: 12px;
+text-align: center;
+font-weight: bold;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 12px;
+margin-bottom: 12px;
+}
+
+/* ================= TABLE SCROLL ================= */
+/* ================= TABLE SCROLL (CRITICAL) ================= */
+.table-wrapper {
+width: 100%;
+  max-width: 100%;
+overflow-x: auto;
+overflow-y: hidden;
+-webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+}
+
+table {
+width: 100%;
+  min-width: 800px; /* forces scroll on phones */
+  min-width: 900px; /* FORCE horizontal scroll */
+border-collapse: collapse;
+margin-top: 20px;
+  font-size: 0.95em;
+  table-layout: auto;
+}
+
+th, td {
+padding: 12px;
+border: 1px solid #ddd;
+text-align: center;
+  white-space: nowrap;
+  white-space: nowrap; /* PREVENT WRAPPING */
+}
+
+th {
+background: #0a2a66;
+color: white;
+}
+
+/* ================= FOOTER ================= */
+footer {
+background: #0a2a66;
+color: white;
+text-align: center;
+padding: 50px 20px;
+border-radius: 20px 20px 0 0;
+}
+
+/* ================= FLOAT BUTTONS ================= */
+/* ================= FLOATING BUTTONS ================= */
+.contact-float {
+position: fixed;
+bottom: 20px;
+width: 55px;
+height: 55px;
+border-radius: 50%;
+color: white;
+font-size: 28px;
+display: flex;
+align-items: center;
+justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.2s;
+}
+
+.contact-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp {
+background: #25D366;
+right: 20px;
+}
+
+.call {
+background: #0a2a66;
+right: 90px;
+}
+
+/* ================= RESPONSIVE ================= */
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
-  body {
-    padding-top: 180px;
+body {
+padding-top: 180px;
+}
+
+  .hero-text h1 {
+    font-size: 1.8em;
   }
 
-  table {
+table {
+    min-width: 900px;
     min-width: 1000px; /* extra safe */
-    font-size: 0.85em;
-  }
+font-size: 0.85em;
+}
 }
 
 @media (max-width: 500px) {
-  .card img {
-    height: 140px;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+.card img {
+height: 140px;
 }
 
-  </style>
+.card-grid {
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+}
+
+</style>
 <body>
 <!-- FLOATING CONTACT BUTTONS -->
 <a href="https://wa.me/254100903600" class="contact-float whatsapp" target="_blank">
-  <i class='bx bxl-whatsapp'></i>
+<i class='bx bxl-whatsapp'></i>
 </a>
 
 <a href="tel:+254100903600" class="contact-float call">
-  <i class='bx bx-phone-call'></i>
+<i class='bx bx-phone-call'></i>
 </a>
 <!-- HEADER -->
 <header class="hero">
-  <div class="hero-container">
-    <img src="loggo.jpg" alt="Timiza Machinery Logo" class="logo">
-    <div class="hero-text">
-      <h1>Timiza Machinery</h1>
-      <p>Affordable & Reliable Farm Machinery in Kenya</p>
-      <div class="hero-buttons">
-        <a href="#products" class="btn outline">View Products</a>
-      </div>
-    </div>
-  </div>
+<div class="hero-container">
+<img src="loggo.jpg" alt="Timiza Machinery Logo" class="logo">
+<div class="hero-text">
+<h1>Timiza Machinery</h1>
+<p>Affordable & Reliable Farm Machinery in Kenya</p>
+<div class="hero-buttons">
+<a href="#products" class="btn outline">View Products</a>
+</div>
+</div>
+</div>
 </header>
 
 
 <!-- ABOUT -->
 <section class="section">
-  <h2>Who We Are</h2>
+<h2>Who We Are</h2>
 
-  <p>
-    Timiza Machinery is a trusted supplier of quality agricultural
-    and agro-processing machinery in Kenya. We help farmers, agribusiness owners,
-    and entrepreneurs increase productivity by providing durable machines at
-    affordable prices.
-  </p>
+<p>
+Timiza Machinery is a trusted supplier of quality agricultural
+and agro-processing machinery in Kenya. We help farmers, agribusiness owners,
+and entrepreneurs increase productivity by providing durable machines at
+affordable prices.
+</p>
 </section>
 
 <!-- ABOUT -->
 <!-- WHY CHOOSE US -->
 <section class="section light">
-  <h2>Why Choose Timiza Machinery?</h2>
-  <div class="features">
-    <div class="feature">✔ Quality & Durable Machinery</div>
-    <div class="feature">✔ Affordable Cash Prices</div>
-    <div class="feature">✔ Flexible Loan & Hire Purchase</div>
-    <div class="feature">✔ Countrywide Delivery</div>
-    <div class="feature">✔ Reliable After-Sales Support</div>
-  </div>
+<h2>Why Choose Timiza Machinery?</h2>
+<div class="features">
+<div class="feature">✔ Quality & Durable Machinery</div>
+<div class="feature">✔ Affordable Cash Prices</div>
+<div class="feature">✔ Flexible Loan & Hire Purchase</div>
+<div class="feature">✔ Countrywide Delivery</div>
+<div class="feature">✔ Reliable After-Sales Support</div>
+</div>
 </section>
 
 <!-- PRODUCTS -->
 <section id="products" class="section">
-  <h2>Our Machinery</h2>
+<h2>Our Machinery</h2>
 
-  <div class="card-grid">
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="poshomill4.jpg" alt="Poshomill">
-       Poshomill
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="walk2.jpg" alt="Mini Tractors">
-      Mini Tractors
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="walk1.jpg" alt="Walking Tractors">
-      Walking Tractors 🚜
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="mini1.jpg" alt="Mini Tractor">
- Modern Highspeed Chaffcutters
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="chaff2.jpg" alt="Chaff Cutters">
-      Chaff Cutters
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="chaff4.jpg" alt="Feed Choppers">
-      Feed Choppers
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="sugar.jpg" alt="Sugarcane Juice Machines">
-      Sugarcane Juice Machines
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="egg2.jpg" alt="Egg Incubators">
-      <img src="egg3.jpg" alt="Egg Incubators">
+<div class="card-grid">
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="poshomill4.jpg" alt="Poshomill">
+Poshomill
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="walk2.jpg" alt="Mini Tractors">
+Mini Tractors
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="walk1.jpg" alt="Walking Tractors">
+Walking Tractors 🚜
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="mini1.jpg" alt="Mini Tractor">
+Modern Highspeed Chaffcutters
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="chaff2.jpg" alt="Chaff Cutters">
+Chaff Cutters
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="chaff4.jpg" alt="Feed Choppers">
+Feed Choppers
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="sugar.jpg" alt="Sugarcane Juice Machines">
+Sugarcane Juice Machines
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="egg2.jpg" alt="Egg Incubators">
+<img src="egg3.jpg" alt="Egg Incubators">
 
-      Egg Incubators
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="sheller1.jpg" alt="Maize Shellers">
-      Maize Shellers
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="mixer3.jpg" alt="Concrete Mixers">
-      Concrete Mixers
-    </div>
-    <div class="card">
-      <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-      <img src="poker.jpg" alt="Poker Vibrators">
-      Poker Vibrators
-    </div>
-  </div>
+Egg Incubators
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="sheller1.jpg" alt="Maize Shellers">
+Maize Shellers
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="mixer3.jpg" alt="Concrete Mixers">
+Concrete Mixers
+</div>
+<div class="card">
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<img src="poker.jpg" alt="Poker Vibrators">
+Poker Vibrators
+</div>
+</div>
 </section>
 
 <!-- WALKING TRACTORS PRICES -->
 <section class="section light">
-  <h2>Walking Tractors Prices</h2>
-  <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-  <table>
-    <tr>
-      <th>HP</th>
-      <th>Cash Price</th>
-      <th>Deposit</th>
-      <th>Monthly</th>
-      <th>Duration</th>
-    </tr>
-    <tr><td>10 HP</td><td>120,000</td><td>24,000</td><td>6,050</td><td>20 Months</td></tr>
-    <tr><td>12 HP</td><td>165,000</td><td>33,000</td><td>7,560</td><td>22 Months</td></tr>
-    <tr><td>14 HP</td><td>190,000</td><td>38,000</td><td>7,980</td><td>24 Months</td></tr>
-    <tr><td>16 HP</td><td>250,000</td><td>50,000</td><td>10,500</td><td>24 Months</td></tr>
-    <tr><td>18 HP</td><td>280,000</td><td>56,000</td><td>10,855</td><td>26 Months</td></tr>
-    <tr><td>22 HP</td><td>360,000</td><td>72,000</td><td>13,440</td><td>27 Months</td></tr>
-    <tr><td>24 HP</td><td>420,000</td><td>84,000</td><td>15,680</td><td>27 Months</td></tr>
-  </table>
+<h2>Walking Tractors Prices</h2>
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<table>
+<tr>
+<th>HP</th>
+<th>Cash Price</th>
+<th>Deposit</th>
+<th>Monthly</th>
+<th>Duration</th>
+</tr>
+<tr><td>10 HP</td><td>120,000</td><td>24,000</td><td>6,050</td><td>20 Months</td></tr>
+<tr><td>12 HP</td><td>165,000</td><td>33,000</td><td>7,560</td><td>22 Months</td></tr>
+<tr><td>14 HP</td><td>190,000</td><td>38,000</td><td>7,980</td><td>24 Months</td></tr>
+<tr><td>16 HP</td><td>250,000</td><td>50,000</td><td>10,500</td><td>24 Months</td></tr>
+<tr><td>18 HP</td><td>280,000</td><td>56,000</td><td>10,855</td><td>26 Months</td></tr>
+<tr><td>22 HP</td><td>360,000</td><td>72,000</td><td>13,440</td><td>27 Months</td></tr>
+<tr><td>24 HP</td><td>420,000</td><td>84,000</td><td>15,680</td><td>27 Months</td></tr>
+</table>
 </section>
 
-  <!-- PRICE LISTS -->
+<!-- PRICE LISTS -->
 <section class="section light">
-  <h2>Feed Chopper Options & Prices</h2>
+<h2>Feed Chopper Options & Prices</h2>
 
-  <table>
-    <tr>
-      <th>Model</th>
-      <th>Power</th>
-      <th>Cash (KSh)</th>
-      <th>Deposit (KSh)</th>
-      <th>Monthly</th>
-      <th>Duration</th>
-    </tr>
-    <tr><td>Petrol Feed Chopper</td><td>7.5 HP</td><td>28,000</td><td>5,600</td><td>2,350</td><td>12 Months</td></tr>
-    <tr><td>Electric Feed Chopper</td><td>3 HP</td><td>35,000</td><td>6,500</td><td>2,940</td><td>12 Months</td></tr>
-    <tr><td>Electric Feed Chopper</td><td>5 HP</td><td>38,000</td><td>7,600</td><td>3,200</td><td>12 Months</td></tr>
-    <tr><td>Imported Petrol Feed Chopper</td><td>7.5 HP</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
-    <tr><td>Imported Electric Feed Chopper</td><td>3 HP</td><td>41,000</td><td>8,200</td><td>3,440</td><td>12 Months</td></tr>
-    <tr><td>Imported Electric Feed Chopper</td><td>5 HP</td><td>45,000</td><td>9,000</td><td>3,570</td><td>15 Months</td></tr>
-    <tr><td>Imported Diesel Feed Chopper</td><td>7.5 HP</td><td>50,000</td><td>10,000</td><td>3,360</td><td>15 Months</td></tr>
-    <tr><td>Diesel Feed Chopper</td><td>10 HP</td><td>60,000</td><td>12,000</td><td>3,360</td><td>18 Months</td></tr>
-    <tr><td>Heavy Duty Feed Chopper</td><td>18 HP Diesel</td><td>160,000</td><td>32,000</td><td>8,060</td><td>20 Months</td></tr>
-    <tr><td>Commercial Feed Chopper</td><td>20 HP Diesel</td><td>180,000</td><td>36,000</td><td>9,070</td><td>20 Months</td></tr>
-    <tr><td>Commercial Feed Chopper</td><td>22 HP Diesel</td><td>198,000</td><td>39,600</td><td>9,730</td><td>20 Months</td></tr>
-    <tr><td>Commercial Feed Chopper</td><td>24 HP Diesel</td><td>210,000</td><td>42,000</td><td>9,620</td><td>20 Months</td></tr>
-  </table>
-</section>
-
-<section class="section light">
-  <h2>Chaff Cutter Price List</h2>
-
-  <table>
-    <tr>
-      <th>Model</th>
-      <th>Specification</th>
-      <th>Cash (KSh)</th>
-      <th>Deposit (KSh)</th>
-      <th>Monthly</th>
-      <th>Duration</th>
-    </tr>
-    <tr><td>Manual Chaff Cutter</td><td>Manual</td><td>17,000</td><td>3,400</td><td>1,430</td><td>12 Months</td></tr>
-    <tr><td>Petrol Chaff Cutter</td><td>5 HP – 2 Blades</td><td>28,000</td><td>5,600</td><td>2,350</td><td>12 Months</td></tr>
-    <tr><td>Petrol Chaff Cutter</td><td>7.5 HP – 3 Blades</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
-    <tr><td>Electric Chaff Cutter</td><td>2 HP – 2 Blades</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
-    <tr><td>Electric Chaff Cutter</td><td>2 HP – 3 Blades, 2 Rollers</td><td>41,000</td><td>8,200</td><td>3,440</td><td>12 Months</td></tr>
-    <tr><td>Electric Chaff Cutter</td><td>3 HP – 3 Blades, 3 Rollers</td><td>45,000</td><td>9,000</td><td>3,570</td><td>12 Months</td></tr>
-    <tr><td>Heavy Duty Chaff Cutter</td><td>5 HP – 4 Blades</td><td>55,000</td><td>11,000</td><td>3,700</td><td>15 Months</td></tr>
-  </table>
+<table>
+<tr>
+<th>Model</th>
+<th>Power</th>
+<th>Cash (KSh)</th>
+<th>Deposit (KSh)</th>
+<th>Monthly</th>
+<th>Duration</th>
+</tr>
+<tr><td>Petrol Feed Chopper</td><td>7.5 HP</td><td>28,000</td><td>5,600</td><td>2,350</td><td>12 Months</td></tr>
+<tr><td>Electric Feed Chopper</td><td>3 HP</td><td>35,000</td><td>6,500</td><td>2,940</td><td>12 Months</td></tr>
+<tr><td>Electric Feed Chopper</td><td>5 HP</td><td>38,000</td><td>7,600</td><td>3,200</td><td>12 Months</td></tr>
+<tr><td>Imported Petrol Feed Chopper</td><td>7.5 HP</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
+<tr><td>Imported Electric Feed Chopper</td><td>3 HP</td><td>41,000</td><td>8,200</td><td>3,440</td><td>12 Months</td></tr>
+<tr><td>Imported Electric Feed Chopper</td><td>5 HP</td><td>45,000</td><td>9,000</td><td>3,570</td><td>15 Months</td></tr>
+<tr><td>Imported Diesel Feed Chopper</td><td>7.5 HP</td><td>50,000</td><td>10,000</td><td>3,360</td><td>15 Months</td></tr>
+<tr><td>Diesel Feed Chopper</td><td>10 HP</td><td>60,000</td><td>12,000</td><td>3,360</td><td>18 Months</td></tr>
+<tr><td>Heavy Duty Feed Chopper</td><td>18 HP Diesel</td><td>160,000</td><td>32,000</td><td>8,060</td><td>20 Months</td></tr>
+<tr><td>Commercial Feed Chopper</td><td>20 HP Diesel</td><td>180,000</td><td>36,000</td><td>9,070</td><td>20 Months</td></tr>
+<tr><td>Commercial Feed Chopper</td><td>22 HP Diesel</td><td>198,000</td><td>39,600</td><td>9,730</td><td>20 Months</td></tr>
+<tr><td>Commercial Feed Chopper</td><td>24 HP Diesel</td><td>210,000</td><td>42,000</td><td>9,620</td><td>20 Months</td></tr>
+</table>
 </section>
 
 <section class="section light">
-  <h2>Generators Price List</h2>
+<h2>Chaff Cutter Price List</h2>
 
-  <table>
-    <tr>
-      <th>Brand</th>
-      <th>Capacity</th>
-      <th>Type</th>
-      <th>Price (KSh)</th>
-    </tr>
-    <tr><td>Hisaki</td><td>3.0 KVA</td><td>Petrol</td><td>38,000</td></tr>
-    <tr><td>Hisaki</td><td>4.0 KVA</td><td>Petrol</td><td>42,000</td></tr>
-    <tr><td>Hisaki</td><td>5.5 KVA</td><td>Petrol</td><td>45,000</td></tr>
-    <tr><td>Hisaki</td><td>6.5 KVA</td><td>Petrol</td><td>78,000</td></tr>
-    <tr><td>Hisaki</td><td>8.0 KVA</td><td>Petrol</td><td>82,000</td></tr>
-    <tr><td>Hisaki</td><td>9.0 KVA</td><td>Petrol</td><td>90,000</td></tr>
-    <tr><td>Hisaki</td><td>9.0 KVA</td><td>3 Phase</td><td>95,000</td></tr>
-    <tr><td>AICO</td><td>2 KVA</td><td>Rope Start</td><td>30,000</td></tr>
-    <tr><td>AICO</td><td>2 KVA</td><td>Key Start</td><td>35,000</td></tr>
-    <tr><td>AICO</td><td>3 KVA</td><td>Rope Start</td><td>33,000</td></tr>
-    <tr><td>AICO</td><td>3 KVA</td><td>Key Start</td><td>37,000</td></tr>
-    <tr><td>AICO</td><td>4 KVA</td><td>Key Start</td><td>42,000</td></tr>
-    <tr><td>AICO</td><td>6 KVA</td><td>Key Start</td><td>62,000</td></tr>
-    <tr><td>AICO</td><td>7 KVA</td><td>Key Start</td><td>78,000</td></tr>
-    <tr><td>Rhino</td><td>7.5 KVA</td><td>Silent Diesel + ATS</td><td>148,000</td></tr>
-    <tr><td>Rhino</td><td>9.0 KVA</td><td>Silent Diesel + ATS</td><td>158,000</td></tr>
-    <tr><td>Rhino</td><td>13.5 KVA</td><td>Silent Diesel + ATS</td><td>365,000</td></tr>
-    <tr><td>American Standard</td><td>9.0 KVA</td><td>Silent Diesel + ATS</td><td>170,000</td></tr>
-  </table>
+<table>
+<tr>
+<th>Model</th>
+<th>Specification</th>
+<th>Cash (KSh)</th>
+<th>Deposit (KSh)</th>
+<th>Monthly</th>
+<th>Duration</th>
+</tr>
+<tr><td>Manual Chaff Cutter</td><td>Manual</td><td>17,000</td><td>3,400</td><td>1,430</td><td>12 Months</td></tr>
+<tr><td>Petrol Chaff Cutter</td><td>5 HP – 2 Blades</td><td>28,000</td><td>5,600</td><td>2,350</td><td>12 Months</td></tr>
+<tr><td>Petrol Chaff Cutter</td><td>7.5 HP – 3 Blades</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
+<tr><td>Electric Chaff Cutter</td><td>2 HP – 2 Blades</td><td>35,000</td><td>7,000</td><td>2,940</td><td>12 Months</td></tr>
+<tr><td>Electric Chaff Cutter</td><td>2 HP – 3 Blades, 2 Rollers</td><td>41,000</td><td>8,200</td><td>3,440</td><td>12 Months</td></tr>
+<tr><td>Electric Chaff Cutter</td><td>3 HP – 3 Blades, 3 Rollers</td><td>45,000</td><td>9,000</td><td>3,570</td><td>12 Months</td></tr>
+<tr><td>Heavy Duty Chaff Cutter</td><td>5 HP – 4 Blades</td><td>55,000</td><td>11,000</td><td>3,700</td><td>15 Months</td></tr>
+</table>
+</section>
+
+<section class="section light">
+<h2>Generators Price List</h2>
+
+<table>
+<tr>
+<th>Brand</th>
+<th>Capacity</th>
+<th>Type</th>
+<th>Price (KSh)</th>
+</tr>
+<tr><td>Hisaki</td><td>3.0 KVA</td><td>Petrol</td><td>38,000</td></tr>
+<tr><td>Hisaki</td><td>4.0 KVA</td><td>Petrol</td><td>42,000</td></tr>
+<tr><td>Hisaki</td><td>5.5 KVA</td><td>Petrol</td><td>45,000</td></tr>
+<tr><td>Hisaki</td><td>6.5 KVA</td><td>Petrol</td><td>78,000</td></tr>
+<tr><td>Hisaki</td><td>8.0 KVA</td><td>Petrol</td><td>82,000</td></tr>
+<tr><td>Hisaki</td><td>9.0 KVA</td><td>Petrol</td><td>90,000</td></tr>
+<tr><td>Hisaki</td><td>9.0 KVA</td><td>3 Phase</td><td>95,000</td></tr>
+<tr><td>AICO</td><td>2 KVA</td><td>Rope Start</td><td>30,000</td></tr>
+<tr><td>AICO</td><td>2 KVA</td><td>Key Start</td><td>35,000</td></tr>
+<tr><td>AICO</td><td>3 KVA</td><td>Rope Start</td><td>33,000</td></tr>
+<tr><td>AICO</td><td>3 KVA</td><td>Key Start</td><td>37,000</td></tr>
+<tr><td>AICO</td><td>4 KVA</td><td>Key Start</td><td>42,000</td></tr>
+<tr><td>AICO</td><td>6 KVA</td><td>Key Start</td><td>62,000</td></tr>
+<tr><td>AICO</td><td>7 KVA</td><td>Key Start</td><td>78,000</td></tr>
+<tr><td>Rhino</td><td>7.5 KVA</td><td>Silent Diesel + ATS</td><td>148,000</td></tr>
+<tr><td>Rhino</td><td>9.0 KVA</td><td>Silent Diesel + ATS</td><td>158,000</td></tr>
+<tr><td>Rhino</td><td>13.5 KVA</td><td>Silent Diesel + ATS</td><td>365,000</td></tr>
+<tr><td>American Standard</td><td>9.0 KVA</td><td>Silent Diesel + ATS</td><td>170,000</td></tr>
+</table>
 </section>
 
 <!-- MINI TRACTOR -->
 <section class="section">
-  <h2>Mini Tractors</h2>
-  <p>
-    Cash Price: <strong>KSh 550,000</strong><br>
-    Deposit: <strong>KSh 110,000</strong><br>
-    Monthly: <strong>KSh 18,145</strong><br>
-    Duration: <strong>30 Months</strong>
-  </p>
+<h2>Mini Tractors</h2>
+<p>
+Cash Price: <strong>KSh 550,000</strong><br>
+Deposit: <strong>KSh 110,000</strong><br>
+Monthly: <strong>KSh 18,145</strong><br>
+Duration: <strong>30 Months</strong>
+</p>
 </section>
 
 <!-- CONCRETE MACHINERY -->
 <section class="section light">
-  <h2>Concrete & Construction Machinery</h2>
-  <a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
-  <ul class="price-list">
-    <li>Menegotti Brazil 400L (Diesel) – KSh 199,750</li>
-    <li>AICO 400L (Diesel) – KSh 174,250</li>
-    <li>Titan Indian 500L (Diesel) – KSh 276,250</li>
-    <li>Poker Vibrator Honda – KSh 55,250</li>
-    <li>Poker Vibrator AICO – KSh 25,500</li>
-    <li>Spartan – KSh 35,700</li>
-    <li>Sensi – KSh 38,250</li>
-  </ul>
+<h2>Concrete & Construction Machinery</h2>
+<a href="https://wa.me/254100903600" class="btn primary">Order Now</a>
+<ul class="price-list">
+<li>Menegotti Brazil 400L (Diesel) – KSh 199,750</li>
+<li>AICO 400L (Diesel) – KSh 174,250</li>
+<li>Titan Indian 500L (Diesel) – KSh 276,250</li>
+<li>Poker Vibrator Honda – KSh 55,250</li>
+<li>Poker Vibrator AICO – KSh 25,500</li>
+<li>Spartan – KSh 35,700</li>
+<li>Sensi – KSh 38,250</li>
+</ul>
 </section>
 
 <!-- CONTACT -->
 <footer>
-  <h2>Contact Timiza Machinery</h2>
-  <p>📞 Call or WhatsApp</p>
-  <p><strong>+254 100 903 600</strong></p>
-  <p><strong>+254 100 807 600</strong></p>
+<h2>Contact Timiza Machinery</h2>
+<p>📞 Call or WhatsApp</p>
+<p><strong>+254 100 903 600</strong></p>
+<p><strong>+254 100 807 600</strong></p>
 
 </footer>
 
 </body>
 </html>
-
-
 
 
 
